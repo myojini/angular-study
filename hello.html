@@ -1,0 +1,33 @@
+<html ng-app="phonecatApp">
+    <head>
+        <script src="src/angular.js"></script>
+        <script src="controllers.js"></script>
+    </head>
+    <body>
+        <h3>PhoneListController Area</h3>
+        <div ng-controller="PhoneListController">
+            <ul>
+                <li ng-repeat="phone in phones">
+                    <span>{{phone.name}}</span>
+                    <p>{{phone.snippet}}</p>
+                    <p>{{phone.myname}}</p>
+                </li>
+            </ul>
+            <p>Total number of phones: {{phones.length}}</p>
+            <p>Hello, {{name}}!</p>
+        </div>
+        
+        <h3>PhoneListController2 Area</h3>
+        <div ng-controller="PhoneListController2">
+            <ul>
+                <li ng-repeat="phone in phones">
+                    <span>{{phone.name}}</span>
+                    <p>{{phone.snippet}}</p>
+                    <p>{{phone.myname}}</p>
+                </li>
+            </ul>
+            <p>Total number of phones: {{phones.length}}</p>
+            <p>Hello, {{name}}!</p>
+        </div>
+    </body>
+</html>
